@@ -1,0 +1,30 @@
+
+
+
+.card {
+    margin-bottom: 30px;
+}
+
+
+.card-footer {
+    padding: 0;
+}
+
+
+
+/*
+.btn-block {
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: #04AA6D;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+  }
+*/
+
+.card-footer button {
+    cursor: pointer;
+}
