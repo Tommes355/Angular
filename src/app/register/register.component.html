@@ -1,0 +1,38 @@
+<div class="register-container">
+    <h2>Benutzer registrieren</h2>
+    <form (ngSubmit)="register()" #registerForm="ngForm">
+      <div>
+        <label for="email">E-Mail</label>
+        <input
+          type="email"
+          id="email"
+          required
+          [(ngModel)]="email"
+          name="email"
+          #emailInput="ngModel"
+        />
+        <div *ngIf="emailInput.invalid && emailInput.touched">
+          Bitte eine gültige E-Mail-Adresse eingeben.
+        </div>
+      </div>
+  
+      <div>
+        <label for="password">Passwort</label>
+        <input
+          type="password"
+          id="password"
+          required
+          minlength="6"
+          [(ngModel)]="password"
+          name="password"
+          #passwordInput="ngModel"
+        />
+        <div *ngIf="passwordInput.invalid && passwordInput.touched">
+          Das Passwort muss mindestens 6 Zeichen lang sein.
+        </div>
+      </div>
+  
+      <button type="submit" [disabled]="registerForm.invalid">Registrieren</button>
+    </form>
+  </div>
+  
