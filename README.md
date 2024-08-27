@@ -1,6 +1,9 @@
-# MyFleaMarketApp
+# MyFirebaseFleaMarketApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.14.
+
+![My-flea-market](https://github.com/thomas-kreuscher/angular/blob/myfleamarket/my-flea-market-app.png?raw=true)
+
 
 ## Development server
 
