@@ -1,0 +1,71 @@
+.hamburger-container {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 10; /* Ensure it is above other elements */
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: transparent; /* Transparent background */
+  border: none; /* Remove border */
+  
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Light gray background on hover */
+  }
+
+  &:active {
+    background-color: rgba(0, 0, 0, 0.2); /* Slightly darker gray on click */
+  }
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: grey;
+  margin: 3px 0;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-menu {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background-color: transparent;
+  width: 150px;
+  border-radius: 5px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  z-index: 10; /* Ensure it appears above the globe */
+}
+
+.nav-menu.show {
+  display: block;
+}
+
+.nav-menu ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.nav-menu li {
+  border-bottom: 1px solid transparent;
+}
+
+.nav-menu a {
+  display: block;
+  padding: 10px;
+  color: grey;
+  text-decoration: none;
+
+  &:hover {
+    background-color: #575757;
+  }
+}

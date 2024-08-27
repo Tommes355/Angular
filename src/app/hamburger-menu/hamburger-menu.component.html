@@ -1,0 +1,17 @@
+<div class="hamburger-container">
+    <div class="hamburger" (click)="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    <nav class="nav-menu" [ngClass]="{ 'show': isMenuOpen }">
+      <ul>
+        <li><a routerLink="/" (click)="toggleMenu()">Home</a></li>
+        <li><a routerLink="/login" (click)="toggleMenu()">Login</a></li>
+        <li><a routerLink="/register" (click)="toggleMenu()">Register</a></li>
+      </ul>
+    </nav>
+  </div>
+  
+
+  
